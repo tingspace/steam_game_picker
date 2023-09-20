@@ -21,10 +21,10 @@ config[STEAM_LIBRARIES_KEY].each do |lib|
     manifest = VDFRuby::Parser.new("#{lib}/#{entry}").parse
     games.push({
                     'Name' => manifest[APP_STATE_KEY]['name'],
-                    'GameId' => manifest[APP_STATE_KEY]['appid'],
+                    'AppId' => manifest[APP_STATE_KEY]['appid'],
                     'Library' => lib
                   })
   end
 end
 
-puts games
+system("start steam://rungameid/#{games[rand(0..games.length-1)]['AppId']}")
