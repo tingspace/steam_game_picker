@@ -1,6 +1,8 @@
 # Steam Game Picker
 
-Script(s) that find the locally installed Steam Games and launches a random one for you.
+Struggling to pick a Steam game? Run this script to launch a random Steam Game that you already have installed!
+
+Indecision is the enemy of fun!
 
 ## How to use it
 
