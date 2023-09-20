@@ -2,7 +2,7 @@ require 'yaml'
 require_relative './lib/vdf_ruby/parser'
 
 CONFIG_FILE = 'config.yml'
-STEAM_BASE_DATA_URI = 'steam://rungameid/'
+STEAM_BASE_DATA_URI = 'steam://rungameid'
 STEAM_INSTALL_KEY = 'steam_install_path'
 STEAM_LIBRARIES_KEY = 'steam_library_locations'
 APP_STATE_KEY = 'AppState'
