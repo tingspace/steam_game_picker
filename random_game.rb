@@ -27,4 +27,4 @@ config[STEAM_LIBRARIES_KEY].each do |lib|
   end
 end
 
-system("start steam://rungameid/#{games[rand(0..games.length-1)]['AppId']}")
+system("start #{STEAM_BASE_DATA_URI}/#{games[rand(0..games.length-1)]['AppId']}")
