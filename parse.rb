@@ -1,11 +1,10 @@
 # frozen_string_literal: true
 
+# NOTE: This is a simple script to test the VDFRuby parser.
+# I am aware that testing in this way is like banging rocks together
+
 require 'json'
 require_relative './lib/vdf_ruby/parser'
-require_relative './lib/helpers/print_helpers'
 
-# ok_vdf = VDFRuby::Parser.new("spec/test_files/ok.vdf").parse
 library_vdf = VDFRuby::Parser.new("spec/test_files/libraryfolders.vdf").parse
-# Helpers.print_nested_hash(library_vdf)
-
 STDOUT.puts(JSON.generate(library_vdf))
