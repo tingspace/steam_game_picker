@@ -20,9 +20,9 @@ Implementation notes:
 5. Filter to files using the following naming format: `appmanifest_123.acf`
 6. Build list of games using `appid`, `name`, and `location`
 
-Note: You can use the Windows Registry to find the Steam Install Path
+Note: You can use the Windows Registry to find the Steam Install Path ([source](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Game_State_Integration/en#Locating_CS:GO_Install_Directory))
 **HOWEVER**
-I am too lazy to learn the Win32 API just for this shitty script
+I am too lazy to learn the [Win32 API](https://learn.microsoft.com/en-us/windows/win32/winprog64/accessing-an-alternate-registry-view?redirectedfrom=MSDN) just for this shitty script
 
 ## Make multi-platform
 
