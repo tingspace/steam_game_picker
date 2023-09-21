@@ -15,19 +15,17 @@ Pre-requisites:
 - Knowledge of where your Steam Libraries are
 
 Steps:
-1. Open the `config.yml` file and update it to your locations
-2. Open a terminal to where you have cloned this repo
-3. Run `ruby random_game.rb`
+1. Open the `config.yml` file and update it with the right locations
+2. Open a terminal and `cd` to wherever you have cloned this repo
+3. Run `ruby random_game.rb` (Or `./random_game.rb` of your system allows)
 4. Profit???
 
 ## Implementation notes
 
-This makes use of the [Steam browser protocol](https://developer.valvesoftware.com/wiki/Steam_browser_protocol) to launch the games. (IE: `steam://rungameid/239030`)
+Games are launched using the [Steam browser protocol](https://developer.valvesoftware.com/wiki/Steam_browser_protocol). (IE: `steam://rungameid/239030`)
 
-To do this, the script tries to find the Steam `appid`s currently installed by reading the `appmanifest` files in your Libraries.
+To do this, the script needs to know the Steam `appid`s you have installed. The script does this by reading the `appmanifest` files in your Steam Libraries and parses for the `appid` contained within and builds a list of these `appid`s.
 
-These `appmanifest` files are in the Valve [KeyValues](https://developer.valvesoftware.com/wiki/KeyValues) format. I couldn't find a good Ruby library for this, so I'm writing my own in `/lib/vdf_ruby`
+After the index is built & numbered, I just pick a random number and select the game in the list at that index to launch. 
 
-Since I'm writing my own library to parse the data format just for this one purpose, expect some bugs if you use it for any other purpose.
-
-If I can ever make the package stable, maybe one day I'll split [vdf_ruby](./lib/vdf_ruby) into its own repo & package.
+NOTE: These `appmanifest` files are in the Valve [KeyValues](https://developer.valvesoftware.com/wiki/KeyValues) Data Format (VDF). I couldn't find a good Ruby library for this, so I'm writing my own in `/lib/vdf_ruby` (See [README](./lib/vdf_ruby/README.md) in that directory for more details)
