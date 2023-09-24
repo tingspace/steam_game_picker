@@ -4,7 +4,7 @@ require_relative '../../../lib/vdf_ruby/parser'
 
 RSpec.describe VDFRuby::Parser do
   it 'returns a hash from a provided vdf file' do
-    expected_hash = {
+    expected_hash = { # TODO: Use the expected hash in the tests
       'SaveFile' => {
         'team1' => 'ciccio',
         'team2' => 'pasticcio'
