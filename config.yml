@@ -2,3 +2,5 @@ steam_install_path: 'C:\Program Files (x86)\Steam'
 steam_library_locations:
   - 'C:\Program Files (x86)\Steam\steamapps'
   - 'D:\SteamLibrary\steamapps'
+skip_appids:
+  - '228980'
