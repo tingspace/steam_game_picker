@@ -5,7 +5,6 @@
 Current bugs:
 1. Hash is a flat data structure (VDF Hierarchies are not respected)
 2. Due to the first, any keys with the same name will merge results
-3. In a key/value pair, if the value string contains spaces; Only the last word is captured
 
 Implementation notes:
 - The contents of the whole VDF file is loaded into memory instantly
