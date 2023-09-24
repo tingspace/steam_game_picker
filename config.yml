@@ -3,4 +3,4 @@ steam_library_locations:
   - 'C:\Program Files (x86)\Steam\steamapps'
   - 'D:\SteamLibrary\steamapps'
 skip_appids:
-  - '228980'
+  - '228980' # https://steamdb.info/app/228980
