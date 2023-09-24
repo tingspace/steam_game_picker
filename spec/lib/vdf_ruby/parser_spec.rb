@@ -17,4 +17,9 @@ RSpec.describe VDFRuby::Parser do
     expect(save_file['team1']).to eq('ciccio')
     expect(save_file['team2']).to eq('pasticcio')
   end
+
+  it 'provides the complete value string' do
+    result = VDFRuby::Parser.new('spec/test_files/appmanifest_9900.acf').parse
+    expect(result['AppState']['name']).to eq('Star Trek Online')
+  end
 end
