@@ -4,3 +4,4 @@ steam_library_locations:
   - 'D:\SteamLibrary\steamapps'
 skip_appids:
   - '228980' # https://steamdb.info/app/228980
+  - '404790' # Godot engine
