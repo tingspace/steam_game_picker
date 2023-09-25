@@ -17,7 +17,7 @@ Pre-requisites:
 Steps:
 1. Open the `config.yml` file and update it with the right locations
 2. Open a terminal and `cd` to wherever you have cloned this repo
-3. Run `ruby random_game.rb` (Or `./random_game.rb` of your system allows)
+3. Run `ruby pick_a_game.rb` (Or `./pick_a_game.rb` if your system allows)
 4. Profit???
 
 ## Implementation notes
