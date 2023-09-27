@@ -17,11 +17,7 @@ module Common
         next unless entry.include?('appmanifest')
         manifest = VDFRuby::Parser.new("#{lib}/#{entry}").parse[APP_STATE_KEY]
         next if skipped_games.include?(manifest['appid'])
-        games.push({
-                     NAME_KEY => manifest['name'],
-                     APP_ID_KEY => manifest['appid'],
-                     LIBRARY_KEY => lib
-                   })
+        games.push(manifest['appid'])
       end
     end
 
